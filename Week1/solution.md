@@ -58,3 +58,54 @@ for(let i =1;i<=num;i++){
  console.log(sum);
 
  7. **Print Squares of Numbers from 1 to N**
+
+  const num = 5;
+ 
+ for(let i=1;i<=num;i++){
+   console.log(i*i)
+ }
+
+
+### 🏠 **Homework / Practice Challenge**
+
+1. **Print all numbers divisible by 3 and 5 up to N**
+
+const num = 30;
+
+for(let i= 1;i<=num;i++){
+    if(i%3===0 && i%5===0){
+        console.log(i);
+        
+    }
+}
+
+2. **Find the sum of all odd numbers up to N**
+
+const num = 10;
+let sumOfOdd = 0;
+for(let i=1;i<=num;i++){
+    if(i%2!==0){
+        sumOfOdd+=i;
+    }
+}
+console.log(sumOfOdd);
+
+3. **Print the cubes of numbers from 1 to N**
+
+const num = 5;
+
+for(let i=1;i<=num;i++){
+    console.log(i*i*i)
+}
+
+
+4. **Print only the numbers that are both even and perfect squares**
+
+const num = 20;
+
+for(let i=1;i<=num;i++){
+    if(i%2===0  && Number.isInteger(Math.sqrt(i))) {
+       console.log(i);
+       
+    }
+}
