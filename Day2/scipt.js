@@ -1,14 +1,11 @@
-
-function maxofthree(a,b,c){
-    let max;
-    if(a>b && a>c){
-        max=a;
-    }else if(b>a && b>c){
-        max=b;
-    }else if(c>a && c>b){
-        max=c
-    }
-    return max;
+function checkPositiveOrNegative(num = 0) {
+  if (num > 0) {
+    return 'Positive';
+  } else if (num < 0) {
+    return 'Negative';
+  }
+  return 'Zero';
 }
 
-console.log(maxofthree(10,20,5))
+
+console.log(checkPositiveOrNegative(-9));
