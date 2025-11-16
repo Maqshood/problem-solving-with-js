@@ -1,11 +1,11 @@
-function checkPositiveOrNegative(num = 0) {
-  if (num > 0) {
-    return 'Positive';
-  } else if (num < 0) {
-    return 'Negative';
-  }
-  return 'Zero';
+function checkVowel(char){
+if('aeiou'.includes(char.toLowerCase() && char!=="")){
+  return "Vowel"
+}else if(/[a-z]/.test(char.toLowerCase())){
+  return 'Consonant';
+}
+return 'Not a valid a number'
 }
 
-
-console.log(checkPositiveOrNegative(-9));
+console.log(checkVowel('e'));
+  
